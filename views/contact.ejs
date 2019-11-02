@@ -137,17 +137,17 @@
               <h4 class="mb-5">Contact Details</h4>
                 <p class="d-flex">
                   <span class="ion-ios-location icon mr-5"></span>
-                  <span>34 Street Name, City Name Here, United States</span>
+                  <span><%= address %></span>
                 </p>
 
                 <p class="d-flex">
                   <span class="ion-ios-telephone icon mr-5"></span>
-                  <span>+1 242 4942 290</span>
+                  <span>+1 <%= phoneNumber %> </span>
                 </p>
 
                 <p class="d-flex">
                   <span class="ion-android-mail icon mr-5"></span>
-                  <span>info@yourdomain.com</span>
+                  <span><%= email %></span>
                 </p>
               </div>
 
@@ -238,18 +238,18 @@
 
           </div>
           <div class="col-md-5 mb-5">
-            <div class="mb-5">
+            <!--<div class="mb-5">
               <h3>Opening Hours</h3>
               <p><strong class="d-block font-weight-normal text-black">Sunday-Thursday</strong> 5AM - 10PM</p>
-            </div>
+            </div> -->
             <div>
               <h3>Contact Info</h3>
               <ul class="list-unstyled footer-link">
                 <li class="d-block">
                   <span class="d-block text-black">Address:</span>
-                  <span>34 Street Name, City Name Here, United States</span></li>
-                <li class="d-block"><span class="d-block text-black">Phone:</span><span>+1 242 4942 290</span></li>
-                <li class="d-block"><span class="d-block text-black">Email:</span><span>info@yourdomain.com</span></li>
+                  <span><%= address %></span></li>
+                <li class="d-block"><span class="d-block text-black">Phone:</span><span>+1 <%= phoneNumber %></span></li>
+                <li class="d-block"><span class="d-block text-black">Email:</span><span><%= email %></span></li>
               </ul>
             </div>
           </div>

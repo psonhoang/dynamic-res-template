@@ -20,6 +20,9 @@ jsonObj = {
     title: "Your Restaurant Name",
     jumboText1: "Your First Text Here",
     jumboText2: "And Another One",
+    address: "123 Hyde Park Blvd",
+    email: "johndoe123@gmail.com",
+    phoneNumber: "773 604 9872",
     appetizers: [
         {
             name: "Tuna Sesame Salad",
