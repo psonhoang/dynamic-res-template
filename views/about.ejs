@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Gourmet &mdash; Colorlib Website Template</title>
+    <title><%= title %></title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -32,7 +32,7 @@
     <header role="banner">
       <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container">
-          <a class="navbar-brand" href="index.html">Gourmet</a>
+          <a class="navbar-brand" href="/">Gourmet</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -40,27 +40,27 @@
           <div class="collapse navbar-collapse" id="navbarsExample05">
             <ul class="navbar-nav ml-auto pl-lg-5 pl-0">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="/">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="recipes.html">Recipes</a>
+                <a class="nav-link" href="recipes">Recipes</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle active" href="services.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+                <a class="nav-link dropdown-toggle" href="services" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
                 <div class="dropdown-menu" aria-labelledby="dropdown04">
-                  <a class="dropdown-item" href="services.html">Delicious Food</a>
-                  <a class="dropdown-item" href="services.html">Enjoy Drinks</a>
-                  <a class="dropdown-item" href="services.html">Eat All You Can</a>
+                  <a class="dropdown-item" href="services">Delicious Food</a>
+                  <a class="dropdown-item" href="services">Enjoy Drinks</a>
+                  <a class="dropdown-item" href="services">Eat All You Can</a>
                 </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="about.html">About</a>
+                <a class="nav-link active" href="about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="news.html">News</a>
+                <a class="nav-link" href="news">News</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
+                <a class="nav-link" href="contact">Contact</a>
               </li>
             </ul>
 
@@ -78,7 +78,7 @@
         <div class="container">
           <div class="row slider-text align-items-center justify-content-center">
             <div class="col-md-8 text-center col-sm-12 ">
-              <h1 data-aos="fade-up">Our Services</h1>
+              <h1 data-aos="fade-up">About Gourmet</h1>
               <p class="mb-5" data-aos="fade-up" data-aos-delay="100">A delicious and tasty food</p>
               <p data-aos="fade-up" data-aos-delay="200"><a href="#" class="btn btn-white btn-outline-white">Get Started</a></p>
             </div>
@@ -90,59 +90,127 @@
     </div> 
     
 
-    <section class="section bg-light pt-5  bottom-slant-gray">
+    <section class="section bg-light py-5  bottom-slant-gray">
       <div class="container">
-        <div class="row">
-          <div class="col-md-6 mb-4 mb-lg-5 col-lg-3 text-left service-block" data-aos="fade-up" data-aos-delay="">
-            <span class="wrap-icon"><span class="flaticon-dinner d-block mb-4"></span></span>
-            <h3 class="mb-2 text-primary">Enjoy Eating</h3>
-            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-          </div>
-          <div class="col-md-6 mb-4 mb-lg-5 col-lg-3 text-left service-block" data-aos="fade-up" data-aos-delay="100">
-            <span class="wrap-icon"><span class="flaticon-fish d-block mb-4"></span></span>
-            <h3 class="mb-2 text-primary">Fresh Sea Foods</h3>
-            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-          </div>
-          <div class="col-md-6 mb-4 mb-lg-5 col-lg-3 text-left service-block" data-aos="fade-up" data-aos-delay="200">
-            <span class="wrap-icon"><span class="flaticon-hot-coffee-rounded-cup-on-a-plate-from-side-view d-block mb-4"></span></span>
-            <h3 class="mb-2 text-primary">Cup of Coffees</h3>
-            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-          </div>
-          <div class="col-md-6 mb-4 mb-lg-5 col-lg-3 text-left service-block" data-aos="fade-up" data-aos-delay="300">
-            <span class="wrap-icon"><span class="flaticon-meat d-block mb-4"></span></span>
-            <h3 class="mb-2 text-primary">Meat Eaters</h3>
-            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-          </div>
+        <div class="row align-items-center">
 
-          <div class="col-md-6 mb-4 mb-lg-5 col-lg-3 text-left service-block" data-aos="fade-up" data-aos-delay="">
-            <span class="wrap-icon"><span class="flaticon-cook d-block mb-4"></span></span>
-            <h3 class="mb-2 text-primary">Free Hot Soup</h3>
-            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+          <div class="col-lg-6">
+            <img src="img/hero_1.jpg" alt="Image" class="img-fluid">
           </div>
-          <div class="col-md-6 mb-4 mb-lg-5 col-lg-3 text-left service-block" data-aos="fade-up" data-aos-delay="100">
-            <span class="wrap-icon"><span class="flaticon-alcohol d-block mb-4"></span></span>
-            <h3 class="mb-2 text-primary">Drinks &amp; Beverages</h3>
-            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-          </div>
-          <div class="col-md-6 mb-4 mb-lg-5 col-lg-3 text-left service-block" data-aos="fade-up" data-aos-delay="300">
-            <span class="wrap-icon"><span class="flaticon-meat d-block mb-4"></span></span>
-            <h3 class="mb-2 text-primary">Meat Eaters</h3>
-            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-          </div>
-          <div class="col-md-6 mb-4 mb-lg-5 col-lg-3 text-left service-block" data-aos="fade-up" data-aos-delay="200">
-            <span class="wrap-icon"><span class="flaticon-hot-coffee-rounded-cup-on-a-plate-from-side-view d-block mb-4"></span></span>
-            <h3 class="mb-2 text-primary">Cup of Coffees</h3>
-            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+          <div class="col-lg-5 ml-auto">
+            <div class="text-left heading-wrap">
+              <h2 data-aos="fade-up">The Restaurant</h2>
+            </div>
+            <!-- <h3 class="mb-4">Welcome To Our Restaurant</h3> -->
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ut enim quam laboriosam illum amet.</p>
+            <p>Obcaecati nisi ipsum possimus necessitatibus tempore, illo id facere magni quisquam quam quaerat accusamus dolores?</p>
+            <p><img src="img/signature.png" alt="Image" class="img-fluid w-25"></p>
           </div>
           
-
         </div>
       </div>
     </section>
     
-    
 
-   
+    <section class="section">
+      <div class="container">
+        <div class="row mb-5 justify-content-center" data-aos="fade">
+            <div class="col-md-7 text-center heading-wrap">
+              <h2 data-aos="fade-up">Best &amp; Good</h2>
+              <p data-aos="fade-up" data-aos-delay="100">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+            </div>
+          </div>
+        <div class="row align-items-center">
+          <div class="col-lg-4">
+            <img src="img/dishes_1.jpg" alt="Image" class="img-fluid about_img_1" data-aos="fade" data-aos-delay="200">
+          </div>
+          <div class="col-lg-4">
+            <img src="img/about_1.jpg" alt="Image" class="img-fluid about_img_1" data-aos="fade" data-aos-delay="200">
+          </div>
+          <div class="col-lg-4">
+            <img src="img/dishes_3.jpg" alt="Image" class="img-fluid about_img_1" data-aos="fade" data-aos-delay="500">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-light top-slant-white">
+
+      <div class="clearfix mb-5 pb-5">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12 text-center heading-wrap">
+              <h2>Chefs</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="container">
+          <div class="row">
+            <div class="major-caousel js-carousel-1 owl-carousel">
+              <div>
+                <div class="media d-block media-custom text-center">
+                  <a href="adoption-single"><img src="img/person_1.jpg" alt="Image Placeholder" class="img-fluid"></a>
+                  <div class="media-body">
+                    <h3 class="mt-0 text-black">Mellisa Howard</h3>
+                    <p class="lead">CEO, Co-Founder</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="media d-block media-custom text-center">
+                  <a href="adoption-single"><img src="img/person_2.jpg" alt="Image Placeholder" class="img-fluid"></a>
+                  <div class="media-body">
+                    <h3 class="mt-0 text-black">Mike Richardson</h3>
+                    <p class="lead">CEO, Co-Founder</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="media d-block media-custom text-center">
+                  <a href="adoption-single"><img src="img/person_3.jpg" alt="Image Placeholder" class="img-fluid"></a>
+                  <div class="media-body">
+                    <h3 class="mt-0 text-black">Charles White</h3>
+                    <p class="lead">CEO, Co-Founder</p>
+                  </div>
+                </div>
+              </div>
+
+               <div>
+              <div class="media d-block media-custom text-center">
+                <a href="adoption-single"><img src="img/person_1.jpg" alt="Image Placeholder" class="img-fluid"></a>
+                <div class="media-body">
+                  <h3 class="mt-0 text-black">Mellisa Howard</h3>
+                  <p class="lead">CEO, Co-Founder</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="media d-block media-custom text-center">
+                <a href="adoption-single"><img src="img/person_2.jpg" alt="Image Placeholder" class="img-fluid"></a>
+                <div class="media-body">
+                  <h3 class="mt-0 text-black">Mike Richardson</h3>
+                  <p class="lead">CEO, Co-Founder</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="media d-block media-custom text-center">
+                <a href="adoption-single"><img src="img/person_3.jpg" alt="Image Placeholder" class="img-fluid"></a>
+                <div class="media-body">
+                  <h3 class="mt-0 text-black">Charles White</h3>
+                  <p class="lead">CEO, Co-Founder</p>
+                </div>
+              </div>
+            </div>
+            
+              
+          </div>
+          <!-- END slider -->
+          </div>
+        </div>
+      
+    </section> <!-- .section -->
 
     <footer class="site-footer" role="contentinfo">
       

@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Gourmet &mdash; Colorlib Website Template</title>
+    <title><%= title %></title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -12,12 +12,12 @@
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/aos.css">
 
-    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="./css/magnific-popup.css">
 
 
     <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
@@ -32,7 +32,7 @@
     <header role="banner">
       <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container">
-          <a class="navbar-brand" href="index.html">Gourmet</a>
+          <a class="navbar-brand" href="/"><strong>Gourmet</strong></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -40,27 +40,30 @@
           <div class="collapse navbar-collapse" id="navbarsExample05">
             <ul class="navbar-nav ml-auto pl-lg-5 pl-0">
               <li class="nav-item">
-                <a class="nav-link active" href="index.html">Home</a>
+                <a class="nav-link active" href="/"><strong>Home</strong></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="recipes.html">Recipes</a>
+                <a class="nav-link" href="recipes"><strong>Menu</strong></a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="services.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+                <a class="nav-link dropdown-toggle" href="services" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Services</strong></a>
                 <div class="dropdown-menu" aria-labelledby="dropdown04">
-                  <a class="dropdown-item" href="services.html">Delicious Food</a>
-                  <a class="dropdown-item" href="services.html">Enjoy Drinks</a>
-                  <a class="dropdown-item" href="services.html">Eat All You Can</a>
+                  <a class="dropdown-item" href="services">Delicious Food</a>
+                  <a class="dropdown-item" href="services">Enjoy Drinks</a>
+                  <a class="dropdown-item" href="services">Eat All You Can</a>
                 </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
+                <a class="nav-link" href="about"><strong>About</strong></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="news.html">News</a>
+                <a class="nav-link" href="news"><strong>News</strong></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
+                <a class="nav-link" href="news"><strong>Order</strong></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact"><strong>Contact</strong></a>
               </li>
             </ul>
 
@@ -80,7 +83,7 @@
           <div class="container">
             <div class="row slider-text align-items-center justify-content-center">
               <div class="col-md-8 text-center col-sm-12 ">
-                <h1 data-aos="fade-up mb-5">Eat, Drinks at Gourmet</h1>
+                <h1 data-aos="fade-up mb-5"><%= jumboText1 %></h1>
                 <p data-aos="fade-up" data-aos-delay="200"><a href="#" class="btn btn-white btn-outline-white">Get Started</a></p>
               </div>
             </div>
@@ -91,7 +94,7 @@
           <div class="container">
             <div class="row slider-text align-items-center justify-content-center">
               <div class="col-md-8 text-center col-sm-12 ">
-                <h1 data-aos="fade-up mb-5">Enjoy delicious food at Gourmet</h1>
+                <h1 data-aos="fade-up mb-5"><%= jumboText2 %></h1>
                 <p data-aos="fade-up" data-aos-delay="200"><a href="#" class="btn btn-white btn-outline-white">Get Started</a></p>
               </div>
             </div>
@@ -108,7 +111,7 @@
         <div class="row align-items-center">
 
           <div class="col-lg-6">
-            <img src="img/hero_1.jpg" alt="Image" class="img-fluid">
+            <img src="./img/hero_1.jpg" alt="Image" class="img-fluid">
           </div>
           <div class="col-lg-5 ml-auto">
             <div class="text-left heading-wrap">
@@ -117,7 +120,7 @@
             <!-- <h3 class="mb-4">Welcome To Our Restaurant</h3> -->
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ut enim quam laboriosam illum amet.</p>
             <p>Obcaecati nisi ipsum possimus necessitatibus tempore, illo id facere magni quisquam quam quaerat accusamus dolores?</p>
-            <p><img src="img/signature.png" alt="Image" class="img-fluid w-25"></p>
+            <p><img src="./img/signature.png" alt="Image" class="img-fluid w-25"></p>
           </div>
           
         </div>
@@ -135,13 +138,13 @@
           </div>
         <div class="row align-items-center">
           <div class="col-lg-4">
-            <img src="img/dishes_1.jpg" alt="Image" class="img-fluid about_img_1" data-aos="fade" data-aos-delay="200">
+            <img src="./img/dishes_1.jpg" alt="Image" class="img-fluid about_img_1" data-aos="fade" data-aos-delay="200">
           </div>
           <div class="col-lg-4">
-            <img src="img/about_1.jpg" alt="Image" class="img-fluid about_img_1" data-aos="fade" data-aos-delay="200">
+            <img src="./img/about_1.jpg" alt="Image" class="img-fluid about_img_1" data-aos="fade" data-aos-delay="200">
           </div>
           <div class="col-lg-4">
-            <img src="img/dishes_3.jpg" alt="Image" class="img-fluid about_img_1" data-aos="fade" data-aos-delay="500">
+            <img src="./img/dishes_3.jpg" alt="Image" class="img-fluid about_img_1" data-aos="fade" data-aos-delay="500">
           </div>
         </div>
       </div>
@@ -393,9 +396,9 @@
         <div class="row">
           <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="blog d-block">
-              <a class="bg-image d-block" href="single.html" style="background-image: url('img/dishes_1.jpg');"></a>
+              <a class="bg-image d-block" href="single" style="background-image: url('img/dishes_1.jpg');"></a>
               <div class="text">
-                <h3><a href="single.html">How To Bake A Good Taste Food</a></h3>
+                <h3><a href="single">How To Bake A Good Taste Food</a></h3>
                 <p class="sched-time">
                   <span> April 22, 2018</span> <br>
                 </p>
@@ -409,9 +412,9 @@
           </div>
           <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="blog d-block">
-              <a class="bg-image d-block" href="single.html" style="background-image: url('img/dishes_2.jpg');"></a>
+              <a class="bg-image d-block" href="single" style="background-image: url('img/dishes_2.jpg');"></a>
               <div class="text">
-                <h3><a href="single.html">How To Bake A Good Taste Food</a></h3>
+                <h3><a href="single">How To Bake A Good Taste Food</a></h3>
                 <p class="sched-time">
                   <span> April 22, 2018</span> <br>
                 </p>

@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Gourmet &mdash; Colorlib Website Template</title>
+    <title><%= title %></title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -32,7 +32,7 @@
     <header role="banner">
       <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container">
-          <a class="navbar-brand" href="index.html">Gourmet</a>
+          <a class="navbar-brand" href="/">Gourmet</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -40,27 +40,27 @@
           <div class="collapse navbar-collapse" id="navbarsExample05">
             <ul class="navbar-nav ml-auto pl-lg-5 pl-0">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="/">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="recipes.html">Recipes</a>
+                <a class="nav-link " href="recipes">Recipes</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="services.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+                <a class="nav-link dropdown-toggle" href="services" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
                 <div class="dropdown-menu" aria-labelledby="dropdown04">
-                  <a class="dropdown-item" href="services.html">Delicious Food</a>
-                  <a class="dropdown-item" href="services.html">Enjoy Drinks</a>
-                  <a class="dropdown-item" href="services.html">Eat All You Can</a>
+                  <a class="dropdown-item" href="services">Delicious Food</a>
+                  <a class="dropdown-item" href="services">Enjoy Drinks</a>
+                  <a class="dropdown-item" href="services">Eat All You Can</a>
                 </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="about.html">About</a>
+                <a class="nav-link " href="about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="news.html">News</a>
+                <a class="nav-link " href="news">News</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
+                <a class="nav-link active" href="contact">Contact</a>
               </li>
             </ul>
 
@@ -78,7 +78,7 @@
         <div class="container">
           <div class="row slider-text align-items-center justify-content-center">
             <div class="col-md-8 text-center col-sm-12 ">
-              <h1 data-aos="fade-up">About Gourmet</h1>
+              <h1 data-aos="fade-up">Contact Us</h1>
               <p class="mb-5" data-aos="fade-up" data-aos-delay="100">A delicious and tasty food</p>
               <p data-aos="fade-up" data-aos-delay="200"><a href="#" class="btn btn-white btn-outline-white">Get Started</a></p>
             </div>
@@ -90,127 +90,137 @@
     </div> 
     
 
-    <section class="section bg-light py-5  bottom-slant-gray">
+    <section class="section  pt-5 top-slant-white2 relative-higher bottom-slant-gray">
+      
       <div class="container">
-        <div class="row align-items-center">
-
+        <div class="row">
           <div class="col-lg-6">
-            <img src="img/hero_1.jpg" alt="Image" class="img-fluid">
-          </div>
-          <div class="col-lg-5 ml-auto">
-            <div class="text-left heading-wrap">
-              <h2 data-aos="fade-up">The Restaurant</h2>
-            </div>
-            <!-- <h3 class="mb-4">Welcome To Our Restaurant</h3> -->
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ut enim quam laboriosam illum amet.</p>
-            <p>Obcaecati nisi ipsum possimus necessitatibus tempore, illo id facere magni quisquam quam quaerat accusamus dolores?</p>
-            <p><img src="img/signature.png" alt="Image" class="img-fluid w-25"></p>
+            <form action="#" method="post">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" class="form-control ">
+                </div>
+                <div class="col-md-6 form-group">
+                  <label for="phone">Phone</label>
+                  <input type="text" id="phone" class="form-control ">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 form-group">
+                  
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" class="form-control ">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 form-group">
+                  <label for="message">Write Message</label>
+                  <textarea name="message" id="message" class="form-control " cols="30" rows="8"></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="submit" value="Send Message" class="btn btn-primary">
+                </div>
+              </div>
+            </form>
           </div>
           
+          <div class="col-lg-6 pl-2 pl-lg-5">
+
+            <div class="col-md-8 mx-auto contact-form-contact-info">
+              <h4 class="mb-5">Contact Details</h4>
+                <p class="d-flex">
+                  <span class="ion-ios-location icon mr-5"></span>
+                  <span>34 Street Name, City Name Here, United States</span>
+                </p>
+
+                <p class="d-flex">
+                  <span class="ion-ios-telephone icon mr-5"></span>
+                  <span>+1 242 4942 290</span>
+                </p>
+
+                <p class="d-flex">
+                  <span class="ion-android-mail icon mr-5"></span>
+                  <span>info@yourdomain.com</span>
+                </p>
+              </div>
+
+          </div>
         </div>
       </div>
-    </section>
-    
 
-    <section class="section">
-      <div class="container">
-        <div class="row mb-5 justify-content-center" data-aos="fade">
-            <div class="col-md-7 text-center heading-wrap">
-              <h2 data-aos="fade-up">Best &amp; Good</h2>
-              <p data-aos="fade-up" data-aos-delay="100">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-            </div>
-          </div>
-        <div class="row align-items-center">
-          <div class="col-lg-4">
-            <img src="img/dishes_1.jpg" alt="Image" class="img-fluid about_img_1" data-aos="fade" data-aos-delay="200">
-          </div>
-          <div class="col-lg-4">
-            <img src="img/about_1.jpg" alt="Image" class="img-fluid about_img_1" data-aos="fade" data-aos-delay="200">
-          </div>
-          <div class="col-lg-4">
-            <img src="img/dishes_3.jpg" alt="Image" class="img-fluid about_img_1" data-aos="fade" data-aos-delay="500">
-          </div>
-        </div>
-      </div>
     </section>
 
-    <section class="section bg-light top-slant-white">
+    <section class="section bg-light pt-0 relative-higher">
 
-      <div class="clearfix mb-5 pb-5">
+      <div class="clearfix mb-5 pb-5 ">
         <div class="container-fluid">
-          <div class="row">
+          <div class="row" data-aos="fade">
             <div class="col-md-12 text-center heading-wrap">
-              <h2>Chefs</h2>
+              <h2>Testimonial</h2>
             </div>
           </div>
         </div>
       </div>
-        <div class="container">
-          <div class="row">
-            <div class="major-caousel js-carousel-1 owl-carousel">
-              <div>
-                <div class="media d-block media-custom text-center">
-                  <a href="adoption-single.html"><img src="img/person_1.jpg" alt="Image Placeholder" class="img-fluid"></a>
-                  <div class="media-body">
-                    <h3 class="mt-0 text-black">Mellisa Howard</h3>
-                    <p class="lead">CEO, Co-Founder</p>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="media d-block media-custom text-center">
-                  <a href="adoption-single.html"><img src="img/person_2.jpg" alt="Image Placeholder" class="img-fluid"></a>
-                  <div class="media-body">
-                    <h3 class="mt-0 text-black">Mike Richardson</h3>
-                    <p class="lead">CEO, Co-Founder</p>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="media d-block media-custom text-center">
-                  <a href="adoption-single.html"><img src="img/person_3.jpg" alt="Image Placeholder" class="img-fluid"></a>
-                  <div class="media-body">
-                    <h3 class="mt-0 text-black">Charles White</h3>
-                    <p class="lead">CEO, Co-Founder</p>
-                  </div>
-                </div>
-              </div>
 
-               <div>
-              <div class="media d-block media-custom text-center">
-                <a href="adoption-single.html"><img src="img/person_1.jpg" alt="Image Placeholder" class="img-fluid"></a>
-                <div class="media-body">
-                  <h3 class="mt-0 text-black">Mellisa Howard</h3>
-                  <p class="lead">CEO, Co-Founder</p>
-                </div>
+      <div class="container">
+
+        <div class="row justify-content-center">
+          <div class="col-lg-7">
+            <div class="owl-carousel centernonloop2">
+              <div class="slide" data-aos="fade-left" data-aos-delay="100">
+                <blockquote class="testimonial">
+                  <p>&ldquo; Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. &rdquo;</p>
+                  <div class="d-flex author">
+                    <img src="img/person_1.jpg" alt="" class="mr-4">
+                    <div class="author-info">
+                      <h4>Mellisa Howard</h4>
+                      <p>CEO, XYZ Company</p>
+                    </div>
+                  </div>  
+                </blockquote>
+              </div>
+              <div class="slide" data-aos="fade-left" data-aos-delay="200">
+                <blockquote class="testimonial">
+                  <p>&ldquo; Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. &rdquo;</p>
+                  <div class="d-flex author">
+                    <img src="img/person_2.jpg" alt="" class="mr-4">
+                    <div class="author-info">
+                      <h4>Mike Richardson</h4>
+                      <p>CEO, XYZ Company</p>
+                    </div>
+                  </div>  
+                </blockquote>
+              </div>
+              <div class="slide" data-aos="fade-left" data-aos-delay="300">
+                <blockquote class="testimonial">
+                  <p>&ldquo; Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. &rdquo;</p>
+                  <div class="d-flex author">
+                    <img src="img/person_3.jpg" alt="" class="mr-4">
+                    <div class="author-info">
+                      <h4>Charles White</h4>
+                      <p>CEO, XYZ Company</p>
+                    </div>
+                  </div>  
+                </blockquote>
               </div>
             </div>
-            <div>
-              <div class="media d-block media-custom text-center">
-                <a href="adoption-single.html"><img src="img/person_2.jpg" alt="Image Placeholder" class="img-fluid"></a>
-                <div class="media-body">
-                  <h3 class="mt-0 text-black">Mike Richardson</h3>
-                  <p class="lead">CEO, Co-Founder</p>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="media d-block media-custom text-center">
-                <a href="adoption-single.html"><img src="img/person_3.jpg" alt="Image Placeholder" class="img-fluid"></a>
-                <div class="media-body">
-                  <h3 class="mt-0 text-black">Charles White</h3>
-                  <p class="lead">CEO, Co-Founder</p>
-                </div>
-              </div>
-            </div>
-            
-              
-          </div>
-          <!-- END slider -->
           </div>
         </div>
-      
+
+        
+
+        
+      </div>
     </section> <!-- .section -->
+
+   
 
     <footer class="site-footer" role="contentinfo">
       

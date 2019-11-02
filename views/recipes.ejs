@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Gourmet &mdash; Colorlib Website Template</title>
+    <title><%= title %></title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -18,8 +18,6 @@
     <link rel="stylesheet" href="css/aos.css">
 
     <link rel="stylesheet" href="css/magnific-popup.css">
-
-
     <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
     <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
@@ -32,7 +30,7 @@
     <header role="banner">
       <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container">
-          <a class="navbar-brand" href="index.html">Gourmet</a>
+          <a class="navbar-brand" href="/">Gourmet</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -40,27 +38,30 @@
           <div class="collapse navbar-collapse" id="navbarsExample05">
             <ul class="navbar-nav ml-auto pl-lg-5 pl-0">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="/"><strong>Home</strong></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="recipes.html">Recipes</a>
+                <a class="nav-link active" href="recipes"><strong>Menu</strong></a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="services.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+                <a class="nav-link dropdown-toggle" href="services" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Services</strong></a>
                 <div class="dropdown-menu" aria-labelledby="dropdown04">
-                  <a class="dropdown-item" href="services.html">Delicious Food</a>
-                  <a class="dropdown-item" href="services.html">Enjoy Drinks</a>
-                  <a class="dropdown-item" href="services.html">Eat All You Can</a>
+                  <a class="dropdown-item" href="services">Delicious Food</a>
+                  <a class="dropdown-item" href="services">Enjoy Drinks</a>
+                  <a class="dropdown-item" href="services">Eat All You Can</a>
                 </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="about.html">About</a>
+                <a class="nav-link " href="about"><strong>About</strong></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="news.html">News</a>
+                <a class="nav-link" href="news"><strong>News</strong></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
+                <a class="nav-link" href="news"><strong>Order</strong></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact"><strong>Contact</strong></a>
               </li>
             </ul>
 
@@ -103,110 +104,23 @@
       </div>
 
       <div class="container">
-        
+        <!-- Recipes -->
         <div class="row no-gutters">
-          <div class="col-md-6">
-            <div class="sched d-block d-lg-flex">
-              <div class="bg-image order-2" style="background-image: url('img/dishes_4.jpg');" data-aos="fade"></div>
-              <div class="text order-1">
-                <h3>Grilled Caesar salad, shaved reggiano</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto illo delectus...</p>
-                <p class="text-primary h3">$12.00</p>
-              </div>
-              
-            </div>
-
-            <div class="sched d-block d-lg-flex">
-              <div class="bg-image" style="background-image: url('img/dishes_1.jpg');" data-aos="fade"></div>
-              <div class="text">
-                <h3>Spicy Calamari and beans</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto illo delectus...</p>
-                <p class="text-primary h3">$12.00</p>
+          <% recipes.forEach(recipe => { %>
+            <div class="col-md-6">
+              <div class="sched d-block d-lg-flex">
+                <div class="bg-image order-2" style="background-image: url(<%= recipe.img %>);" data-aos="fade"></div>
+                <div class="text order-1">
+                  <h3><%= recipe.name %></h3>
+                  <p><%= recipe.desc %></p>
+                  <p class="text-primary h3">$<%= recipe.price %></p>
+                </div>
                 
               </div>
-              
             </div>
-
-          </div>
-
-          <div class="col-md-6">
-            <div class="sched d-block d-lg-flex">
-              <div class="bg-image order-2" style="background-image: url('img/dishes_2.jpg');" data-aos="fade"></div>
-              <div class="text order-1">
-                <h3>Bacon wrapped wild gulf prawns</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto illo delectus...</p>
-                <p class="text-primary h3">$18.00</p>
-                
-              </div>
-              
-            </div>
-
-            <div class="sched d-block d-lg-flex">
-              <div class="bg-image" style="background-image: url('img/dishes_3.jpg');" data-aos="fade"></div>
-              <div class="text">
-                <h3>Seared ahi tuna fillet*, honey-ginger sauce</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto illo delectus...</p>
-                <p class="text-primary h3">$16.00</p>
-                
-              </div>
-              
-            </div>
-
-          </div>
+          <% }); %>
         </div>
-
-        <div class="row no-gutters">
-          <div class="col-md-6">
-            <div class="sched d-block d-lg-flex">
-              <div class="bg-image order-2" style="background-image: url('img/dishes_4.jpg');" data-aos="fade"></div>
-              <div class="text order-1">
-                <h3>Grilled Caesar salad, shaved reggiano</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto illo delectus...</p>
-                <p class="text-primary h3">$12.00</p>
-              </div>
-              
-            </div>
-
-            <div class="sched d-block d-lg-flex">
-              <div class="bg-image" style="background-image: url('img/dishes_1.jpg');" data-aos="fade"></div>
-              <div class="text">
-                <h3>Spicy Calamari and beans</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto illo delectus...</p>
-                <p class="text-primary h3">$12.00</p>
-                
-              </div>
-              
-            </div>
-
-          </div>
-
-          <div class="col-md-6">
-            <div class="sched d-block d-lg-flex">
-              <div class="bg-image order-2" style="background-image: url('img/dishes_2.jpg');" data-aos="fade"></div>
-              <div class="text order-1">
-                <h3>Bacon wrapped wild gulf prawns</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto illo delectus...</p>
-                <p class="text-primary h3">$18.00</p>
-                
-              </div>
-              
-            </div>
-
-            <div class="sched d-block d-lg-flex">
-              <div class="bg-image" style="background-image: url('img/dishes_3.jpg');" data-aos="fade"></div>
-              <div class="text">
-                <h3>Seared ahi tuna fillet*, honey-ginger sauce</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto illo delectus...</p>
-                <p class="text-primary h3">$16.00</p>
-                
-              </div>
-              
-            </div>
-
-          </div>
-        </div>
-        
-
+        <!-- END -->
       </div>
     </section> <!-- .section -->
     
