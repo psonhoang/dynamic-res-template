@@ -4,7 +4,8 @@
   "description": "A dynamic restaurant web template that receives a JSON Object from the website builder API to compile or complete website",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
