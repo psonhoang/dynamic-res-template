@@ -97,16 +97,27 @@
         <div class="container-fluid">
           <div class="row" data-aos="fade">
             <div class="col-md-12 text-center heading-wrap">
-              <h2>Our Recipes</h2>
+              <h2>Menu</h2>
             </div>
           </div>
         </div>
       </div>
 
+      <!-- Appetizers -->
+      <div class="clearfix mb-5 pb-5">
+        <div class="container-fluid">
+          <div class="row" data-aos="fade">
+            <div class="col-md-12 text-center heading-wrap">
+              <h3>Appetizers</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Menu Container -->
       <div class="container">
         <!-- Recipes -->
         <div class="row no-gutters">
-          <% recipes.forEach(recipe => { %>
+          <% appetizers.forEach(recipe => { %>
             <div class="col-md-6">
               <div class="sched d-block d-lg-flex">
                 <div class="bg-image order-2" style="background-image: url(<%= recipe.img %>);" data-aos="fade"></div>
@@ -122,6 +133,42 @@
         </div>
         <!-- END -->
       </div>
+      <!-- END -->
+
+      <br><br><br><br>
+
+      <!-- Entrée -->
+      <div class="clearfix mb-5 pb-5">
+        <div class="container-fluid">
+          <div class="row" data-aos="fade">
+            <div class="col-md-12 text-center heading-wrap">
+              <h3>Entrée</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Menu Container -->
+      <div class="container">
+        <!-- Recipes -->
+        <div class="row no-gutters">
+          <% entree.forEach(recipe => { %>
+            <div class="col-md-6">
+              <div class="sched d-block d-lg-flex">
+                <div class="bg-image order-2" style="background-image: url(<%= recipe.img %>);" data-aos="fade"></div>
+                <div class="text order-1">
+                  <h3><%= recipe.name %></h3>
+                  <p><%= recipe.desc %></p>
+                  <p class="text-primary h3">$<%= recipe.price %></p>
+                </div>
+              </div>
+            </div>
+          <% }); %>
+        </div>
+        <!-- END -->
+      </div>
+      <!-- END -->
+
+
     </section> <!-- .section -->
     
 
