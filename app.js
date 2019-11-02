@@ -30,7 +30,7 @@ jsonObj = {
             name: "Smoked Salmon",
             desc: "Salmon, bread, cheese... all on a stick",
             price: "4.50",
-            img: "https://images-gmi-pmc.edge-generalmills.com/57be9c18-f2e5-453c-9286-c96d3ddb9555.jpg"
+            img: "https://www.recipetineats.com/wp-content/uploads/2016/10/Smoked-Salmon-Bites_2-680x951.jpg"
         }
     ],
     entree: [
