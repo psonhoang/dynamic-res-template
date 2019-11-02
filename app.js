@@ -1,6 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-const path = require('path');
+const path = require("path");
+const request = require("request");
 const app = express();
 
 // Public static
@@ -62,9 +63,22 @@ jsonObj = {
 }
 
 app.get("/", (req, res) => {
-    res.render("index", jsonObj);
+    request("https://d75dffea.ngrok.io/testuser", {json: true}, (err, response, body) => {
+        if(err) {return console.log(err);}
+        // Check if response body is empty
+        if(JSON.stringify(body) === "{}") {
+            res.send("Empty JSON");
+        } else {
+            // Populate jsonObj
+            jsonObj = body;
+            // Generate dynamic website from jsonObj
+            res.render("index", jsonObj);
+        }
+    });
 });
 
+
+// Routes are only called when jsonObj is populated
 app.get("/about", (req, res) => {
     res.render("about", jsonObj);
 });
