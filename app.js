@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({
 
 // GET JSON FROM API
 jsonObj = {
-    title: "Ninja Eats",
+    title: "Your Restaurant Name",
     jumboText1: "Your First Text Here",
     jumboText2: "And Another One",
     appetizers: [
@@ -66,14 +66,12 @@ app.get("/", (req, res) => {
     request("https://d75dffea.ngrok.io/testuser", {json: true}, (err, response, body) => {
         if(err) {return console.log(err);}
         // Check if response body is empty
-        if(JSON.stringify(body) === "{}") {
-            res.send("Empty JSON");
-        } else {
+        if(JSON.stringify(body) !== "{}") {
             // Populate jsonObj
             jsonObj = body;
-            // Generate dynamic website from jsonObj
-            res.render("index", jsonObj);
         }
+        // Generate dynamic website from jsonObj
+        res.render("index", jsonObj);
     });
 });
 
