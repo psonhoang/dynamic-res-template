@@ -1,2 +1,2 @@
 # dynamic-res-template
-Dynamic Restaurant Template for Facebook Chicago Hackathon
+Dynamic Restaurant Template for Website Builder Messenger Bot.
